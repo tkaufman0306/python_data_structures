@@ -3,8 +3,8 @@ def sum_pairs(nums, goal):
 
     For example:
 
-        >>> sum_pairs([1, 2, 2, 10], 4)
-        (2, 2)
+        >>> sum_pairs([1, 2, 3, 10], 4)
+        (1, 3)
 
     (4, 2) sum to 6, and come before (5, 1):
 
@@ -33,3 +33,12 @@ def sum_pairs(nums, goal):
         already_visited.add(i)
 
     return ()
+
+
+# OR
+# def divisible_sum_pairs(n, k, ar):
+#     count=0
+#     for i in range(n):
+#         for j in range(i+1,n):
+#             if((ar[i]+ar[j])%k ==0):
+#                 count +=1
